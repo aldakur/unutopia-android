@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:drawable="@drawable/bg_noise"/><!-- Errepikatzen den fondo txuria puntito beltzekin -->
+    <item android:drawable="@drawable/logo_rss" /><!-- RSS logoa drwa9patch motakoa -->
+    <item android:drawable="@drawable/bg_shadow" /><!-- XML bat da. Bertan degradado beltz-transparentea definitzen da -->
+    
+
+</layer-list>

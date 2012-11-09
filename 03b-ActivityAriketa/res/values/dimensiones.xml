@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_title">30dp</dimen>
+    <dimen name="text_subtitle">15dp</dimen>
+    <dimen name="text_version">10dp</dimen>
+    
+</resources>
