@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Zure RSS</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="splash_title">Zure RSS</string>
+    <string name="splash_subtitle">aldakur.net</string>
+    <string name="splash_unutopia">unutopia</string>
+    <string name="version">version: Alpha1.0</string>
+    
+    <string name="about_title">about</string>
+    <string name="about_text">Aplikazio hau unutopia proiektuaren barnean sortutako app bat da. Nire lehenengo app-a da. Alpha bertsio bat da, beraz erroreak izan ditzazke. Aplikazioaren helburua RSS irakurgailu bat izatea da.<br></br></string>
+	<string name="license_title"><b>Lizentzia:</b></string>
+	<string name="about_license">Reconocimiento - NoComercial (by-nc): Se permite la generación de obras derivadas siempre que no se haga un uso comercial. Tampoco se puede utilizar la obra original con finalidades comerciales.Reconocimiento - NoComercial (by-nc): Se permite la generación de obras derivadas siempre que no se haga un uso comercial. Tampoco se puede utilizar la obra original con finalidades comerciales.Reconocimiento - NoComercial (by-nc): Se permite la generación de obras derivadas siempre que no se haga un uso comercial. Tampoco se puede utilizar la obra original con finalidades comerciales.Reconocimiento - NoComercial (by-nc): Se permite la generación de obras derivadas siempre que no se haga un uso comercial. Tampoco se puede utilizar la obra original con finalidades comerciales.Reconocimiento - NoComercial (by-nc): Se permite la generación de obras derivadas siempre que no se haga un uso comercial. Tampoco se puede utilizar la obra original con finalidades comerciales.Reconocimiento - NoComercial (by-nc): Se permite la generación de obras derivadas siempre que no se haga un uso comercial. Tampoco se puede utilizar la obra original con finalidades comerciales.Reconocimiento - NoComercial (by-nc): Se permite la generación de obras derivadas siempre que no se haga un uso comercial. Tampoco se puede utilizar la obra original con finalidades comerciales.</string>
+	
+</resources>
