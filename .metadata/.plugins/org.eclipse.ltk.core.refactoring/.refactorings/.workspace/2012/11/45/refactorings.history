@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete resource &apos;net.aldakur.app.unutopia.SplashActivity&apos;" deleteContents="false" description="Delete resource &apos;net.aldakur.app.unutopia.SplashActivity&apos;" element1="/net.aldakur.app.unutopia.SplashActivity" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1352479060512"/>
+</session>
