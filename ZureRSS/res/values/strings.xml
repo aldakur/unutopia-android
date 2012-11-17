@@ -1,0 +1,20 @@
+<resources>
+
+    <string name="app_name">ZureRSS</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_splash">Zure RSS</string>
+    <string name="splash_title">Zure RSS</string>
+    <string name="splash_subtitle">aldakur.net</string>
+    <string name="about_version">version 1.0 alpha</string>
+    <string name="about">about</string>
+    <string name="license">Zure RSS nire lehen Android aplikazioa da. Nire blogean informazio gehiago izango duzu. www.aldakur.net\n\n<b>Lizentzia:\n</b>Aitortu — Lanaren kredituak aitortu behar dituzu, egileak edo baimendunak zehaztutako eran (baina ez aditzera emanez haien babesa duzunik edo haiek obraren erabilera hori babesten dutenik).Salbuespena — Aipatutako baldintzak salbuetsiak izan daitezke eskubideen jabearen baimena lortzen baduzu.
+\nEskumen Publikoa — Lana edo haren osagairen bat eskumen publikoan dagoenean, indarrean diren legeen arabera, baimen honek ez dio inolaz ere eragingo egoera horri.
+\nBeste eskubideak — Eskubide hauei ez die inoiz ere eragingo baimen honek:
+Bidezko hitzarmenak edo bidezko erabilera eskubideak, edo jabetza eskubideen beste salbuespen edo mugakizunak;
+Egilearen eskubide moralak;
+Bestek izan ditzaketen eskubideak lanaren gainean edo haren erabileraren gainean, hala nola irudi eskubideak edo pribatutasun eskubideak.
+</string>
+
+    <string name="btn_about">about</string>
+
+</resources>

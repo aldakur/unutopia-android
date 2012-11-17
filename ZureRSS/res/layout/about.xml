@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_about" >
+
+    <TextView
+        android:id="@id/about_version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/about_version"
+        android:textSize="@dimen/text_version" 
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/splash_subtitle"
+        android:textSize="@dimen/text_version" 
+        android:textColor="@color/black"/>
+
+    <!-- Transparentzia panel_text_trasparent-->
+
+    <TextView
+        android:id="@id/about_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/about_version"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/panel_text_trasparent"
+        android:text="@string/about"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_title" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/about_subtitle"
+        android:layout_marginTop="16dp"
+        android:text="@string/license"
+        android:textSize="@dimen/text_subtitle" 
+        android:textColor="@color/black"/>
+
+</RelativeLayout>
