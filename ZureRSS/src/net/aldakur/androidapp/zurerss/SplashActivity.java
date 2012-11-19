@@ -10,6 +10,8 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 public class SplashActivity extends Activity {
 
@@ -56,6 +58,7 @@ public class SplashActivity extends Activity {
         //postDelayed recibe dos parametros.
         //el primero el Runnable
         //el segundo long delayMillis
+
         new Handler().postDelayed(new Runnable(){
         	
     	
@@ -68,7 +71,8 @@ public class SplashActivity extends Activity {
     	};
     }, SPLASH_DISPLAY_LENGTH);
         
-	}
+        
+	}//finish_onCreate
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
