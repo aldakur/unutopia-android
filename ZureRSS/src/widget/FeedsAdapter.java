@@ -4,7 +4,6 @@ package widget;
 
 import java.util.List;
 import java.util.Map;
-import net.aldakur.androidapp.zurerss.R;
 import data.FeedContract;
 
 import android.content.Context;
