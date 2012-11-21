@@ -10,33 +10,34 @@ import android.view.Menu;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
-import android.widget.TextView;
-import android.widget.Toast;
+
 
 public class SplashActivity extends Activity {
-
-	@Override
-	protected void onPause() {
-		// TODO Auto-generated method stub
-		super.onPause();
-		finish();
-	}
-	@Override
-	protected void onStop() {
-		// TODO Auto-generated method stub
-		super.onPause();
-		finish();
-	}
 	
-
-	//SPLASH_DISPLAY_LENGTH el tiempo en espera de la Activity splash en milisegundos
-	private final int SPLASH_DISPLAY_LENGTH = 6000;
+  
+	private Handler delayed;
+	private Runnable delayedTask = new Runnable () {
+		
+    			public void run(){
+    			Context contexto = SplashActivity.this;
+    			Intent intent = new Intent(contexto, ArticleListActivity.class);
+    			startActivity(intent);
+    			delayed.removeCallbacks(this);
+    			/*Destruye esta*/
+    			finish();
+    			}
+	};
 
 
 	@Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash);
+        
+        // creamos un temporizador para que, pasados 6 segundos, se muestre la activity ArticleListActivity
+        delayed = new Handler ();
+        delayed.removeCallbacks(delayedTask);
+        delayed.postDelayed(delayedTask, 6000);
         
         LinearLayout btn = (LinearLayout) findViewById(R.id.btn_splash);
         btn.setOnClickListener(new OnClickListener(){
@@ -46,37 +47,33 @@ public class SplashActivity extends Activity {
 				Context contexto = SplashActivity.this;
 				//Intente sortu eta ze aktibitara joan behar dugun zehaztu
 				Intent intent = new Intent(contexto,ArticleListActivity.class);
-				startActivity(intent); 
+				startActivity(intent);
+				delayed.removeCallbacks(delayedTask);
 				/*Destruye esta*/
 				finish();
 				
 			}});
-    
-	//cuando pasen dos segundos si el usuario no ha pulsado el boton. Pasamos a la siguiente Activity
-    //automaticamente
-        
-        //postDelayed recibe dos parametros.
-        //el primero el Runnable
-        //el segundo long delayMillis
-
-        new Handler().postDelayed(new Runnable(){
-        	
-    	
-    	public void run(){
-    		Context contexto = SplashActivity.this;
-       		Intent intent = new Intent(contexto, ArticleListActivity.class);
-    		startActivity(intent);
-			/*Destruye esta*/
-    		finish();
-    	};
-    }, SPLASH_DISPLAY_LENGTH);
-        
-        
 	}//finish_onCreate
 
+	
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.splash, menu);
         return true;
     }
+
+	@Override
+	protected void onPause() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		delayed.removeCallbacks(delayedTask);
+		finish();
+	}
+	@Override
+	protected void onStop() {
+		// TODO Auto-generated method stub
+		super.onPause();
+		delayed.removeCallbacks(delayedTask);
+		finish();
+	}
 }
